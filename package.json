@@ -1,0 +1,108 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nodebb-theme-awge@1.0.0",
+        "scope": null,
+        "escapedName": "nodebb-theme-awge",
+        "name": "nodebb-theme-awge",
+        "rawSpec": "1.0.0",
+        "spec": "1.0.0",
+        "type": "version"
+      },
+      "/home/ubuntu/workspace/nodebb"
+    ],
+    [
+      {
+        "raw": "nodebb-theme-awge@^1.2.0",
+        "scope": null,
+        "escapedName": "nodebb-theme-awge",
+        "name": "nodebb-theme-awge",
+        "rawSpec": "^1.2.0",
+        "spec": ">=1.2.0 <2.0.0",
+        "type": "range"
+      },
+      "/home/ec2-user/environment/NodeBB"
+    ],
+    [
+      {
+        "raw": "nodebb-theme-awge@^2.0.0",
+        "scope": null,
+        "escapedName": "nodebb-theme-awge",
+        "name": "nodebb-theme-awge",
+        "rawSpec": "^2.0.0",
+        "spec": ">=2.0.0 <3.0.0",
+        "type": "range"
+      },
+      "/home/ec2-user/environment/NodeBB"
+    ],
+    [
+      {
+        "raw": "nodebb-theme-awge",
+        "scope": null,
+        "escapedName": "nodebb-theme-awge",
+        "name": "nodebb-theme-awge",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/ec2-user/environment/NodeBB"
+    ]
+  ],
+  "_from": "nodebb-theme-awge",
+  "_id": "nodebb-theme-awge@2.1.3",
+  "_inCache": true,
+  "_location": "/nodebb-theme-awge",
+  "_nodeVersion": "6.11.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nodebb-theme-awge-2.1.3.tgz_1516739831784_0.7176315165124834"
+  },
+  "_npmUser": {
+    "name": "alex_shortt",
+    "email": "alexander.shortt@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nodebb-theme-awge",
+    "scope": null,
+    "escapedName": "nodebb-theme-awge",
+    "name": "nodebb-theme-awge",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-awge/-/nodebb-theme-awge-2.1.3.tgz",
+  "_shasum": "a48038a0a3bcbc2909adcaa7f4f928bdadf9067c",
+  "_shrinkwrap": null,
+  "_spec": "nodebb-theme-awge",
+  "_where": "/home/ec2-user/environment/NodeBB",
+  "author": {
+    "name": "Alex Shortt",
+    "email": "alexander.shortt@gmail.com"
+  },
+  "dependencies": {},
+  "description": "NodeBB Theme for AWGE Forums",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a48038a0a3bcbc2909adcaa7f4f928bdadf9067c",
+    "tarball": "https://registry.npmjs.org/nodebb-theme-awge/-/nodebb-theme-awge-2.1.3.tgz"
+  },
+  "gitHead": "ee7eb74eb2eed57d4666261a568fb419f9bad638",
+  "maintainers": [
+    {
+      "name": "alex_shortt",
+      "email": "alexander.shortt@gmail.com"
+    }
+  ],
+  "name": "nodebb-theme-awge",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {},
+  "version": "2.1.3"
+}

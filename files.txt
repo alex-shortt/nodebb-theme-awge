@@ -1,0 +1,129 @@
+This is to keep track of which files the theme has overwritten and/or might need to overwrite. 
+
+y: The file is overwritten with this theme
+n : The file is intentionally not overwritten
+?: Not sure what the file is
+
+templates/
+├── account/
+│   ├── edit/
+│   │   ├── email.tpl     -  X  - Edit Email Page
+│   │   ├── password.tpl  -  X  - Edit Password Page
+│   │   └── username.tpl  -  X  - Edit Username Page
+│   ├── best.tpl       -  O  - List of best posts by user
+│   ├── bookmarks.tpl  -  O  - List of bookmarked posts by user
+│   ├── downvoted.tpl  -  O  - List of downvoted posts by user
+│   ├── edit.tpl       -  X  - Edit profile page
+│   ├── followers.tpl  -  X  - List of followers of user
+│   ├── following.tpl  -  X  - List of users user is following
+│   ├── groups.tpl     -  X  - List of gropus user is a part of
+│   ├── ignored.tpl    -  O  - List of ignored posts by user
+│   ├── info.tpl       -  X  - Info about user
+│   ├── posts.tpl      -  X  - Posts made by user
+│   ├── profile.tpl    -  X  - Main profile page for user
+│   ├── settings.tpl   -  X  - User settings
+│   └── topics.tpl     -  X  - List of topics made by user
+├── admin/
+│   └── plugins/
+│       └── persona.tpl  -  O  - Settings for theme in admin panel
+├── flags/
+│   ├── detail.tpl  -  ?  - Individual flag page?
+│   └── list.tpl    -  ?  - List of flags?
+├── groups/
+│   ├── details.tpl  -  X  - Page for user gropus (invitations, current, etc.)
+│   ├── list.tpl     -  X  - Groups page listing groups
+│   └── members.tpl  -  O  - List of users in a group? - not used
+├── modules/
+│   ├── taskbar.tpl   -  O  - Space for alerts? - not used
+│   └── usercard.tpl  -  O  - Card explaining main users stats? - not used
+├── partials/
+│   ├── account/
+│   │   ├── header.tpl  -  X  - Cover picture, user icon, and settings
+│   │   └── menu.tpl    -  X  - User settings ()
+│   ├── categories/
+│   │   ├── item.tpl      -  O  - Individual listing of a category
+│   │   ├── lastpost.tpl  -  O  - Last updated post in that category, shows up next to category listing
+│   │   └── link.tpl      -  O  - Link to category
+│   ├── category/
+│   │   ├── sort.tpl         -  X  - Option to "sort topics in category by..."
+│   │   ├── subcategory.tpl  -  X  - List of subcategories on category page
+│   │   ├── tags.tpl         -  O  - Tags in a category
+│   │   ├── tools.tpl        -  X  - Options in a category for admin use
+│   │   └── watch.tpl        -  X  - Option in a category to filter out watching/not
+│   ├── chats/
+│   │   ├── dropdown.tpl        -  O  - Don't have chat enabled, don't care
+│   │   ├── message-window.tpl  -  O  - Don't have chat enabled, don't care
+│   │   ├── message.tpl         -  O  - Don't have chat enabled, don't care
+│   │   ├── messages.tpl        -  O  - Don't have chat enabled, don't care
+│   │   ├── recent_room.tpl     -  O  - Don't have chat enabled, don't care
+│   │   └── user.tpl            -  O  - Don't have chat enabled, don't care
+│   ├── flags/
+│   │   └── filters.tpl  -  O  - Filters for flagging users
+│   ├── groups/
+│   │   ├── list.tpl        -  O  - List of groups
+│   │   └── memberlist.tpl  -  O  - List of members in group
+│   ├── modals/
+│   │   ├── change_picture_modal.tpl           -  O  - Modal for changing picture
+│   │   ├── flag_modal.tpl                     -  O  - Modal for flagging a user
+│   │   ├── upload_file_modal.tpl              -  O  - Modal for uploading file
+│   │   ├── upload_picture_from_url_modal.tpl  -  O  - Modal for linking picture
+│   │   └── votes_modal.tpl                    -  O  - Modal for votes
+│   ├── noscript/
+│   │   └── warning.tpl  -  O  - Javascript support warning
+│   ├── topic/
+│   │   ├── badge.tpl            -  O  - User badge
+│   │   ├── browsing-users.tpl   -  O  - List of users browsing topic
+│   │   ├── post-editor.tpl      -  O  - Text to note last edit by user
+│   │   ├── post-menu-list.tpl   -  O  - Settings for topic
+│   │   ├── post-menu.tpl        -  O  - Settings for topic container
+│   │   ├── post.tpl             -  O  - Individual post
+│   │   ├── quickreply.tpl       -  O  - Quickreply on topics
+│   │   ├── reply-button.tpl     -  O  - Button to reply to post
+│   │   ├── sort.tpl             -  O  - Button to sort topic posts
+│   │   ├── stats.tpl            -  O  - Posts and View stats for topic
+│   │   ├── topic-menu-list.tpl  -  O  - Topic options for admin
+│   │   └── watch.tpl            -  O  - Button to view/hide watching/not topics
+│   ├── acceptTos.tpl           -  O  - Page to accept terms of service
+│   ├── breadcrumbs.tpl         -  X  - Breadcrumbs. Yep.
+│   ├── category-selector.tpl   -  O  - Combobox to select category, used a lot including in new topics
+│   ├── cookie-consent.tpl      -  O  - Alert to consent to cookies
+│   ├── delete_posts_modal.tpl  -  O  - Modal to confirm deleting a post in a topic
+│   ├── fork_thread_modal.tpl   -  X  - Modal to fork thread
+│   ├── menu.tpl                -  X  - Navbar. Important!
+│   ├── mege_topics_modal.tpl   -  X  - Modal to merge threads
+│   ├── move_post_modal.tpl     -  O  - Modal to move post to seperate thread
+│   ├── move_thread_modal.tpl   -  O  - Modal to move topic to different category
+│   ├── notifications_list.tpl  -  O  - Notifications dropup from navbar
+│   ├── paginator.tpl           -  O  - Paginator to page through topics. Lives on navbar.
+│   ├── post_bar.tpl            -  O  - Group of buttons for each post
+│   ├── posts_list.tpl          -  O  - Lists of post user has made in timeline format -- seen in user profile page
+│   ├── tags_list.tpl           -  O  - List of tags
+│   ├── thread_tools.tpl        -  O  - Settings for admin in thread
+│   ├── topics_list.tpl         -  X  - List of topics, used almost everywhere
+│   ├── users_list.tpl          -  O  - List of users, used a lot of places
+│   └── users_list_menu.tpl     -  X  - Settings for sorting users on users page
+├── alert.tpl              -  X  - Alerts that show up at the bottom right with messages like "You are now logged in"
+├── categories.tpl         -  X  - List of categories
+├── category.tpl           -  X  - An individual category
+├── chat.tpl               -  O  - Chat Modal
+├── chats.tpl              -  O  - Page for listing chats
+├── confirm.tpl            -  ?  - Modal for email confirmation?
+├── footer.tpl             -  X  - Bottom of page across all pages
+├── header.tpl             -  X  - Top of page across all pages
+├── login.tpl              -  X  - Login page
+├── notifications.tpl      -  X  - Page listing notifications
+├── outgoing.tpl           -  ?  - Ougoing messages?
+├── popular.tpl            -  X  - Popular topics of a given time period
+├── recent.tpl             -  X  - Recent topics
+├── register.tpl           -  X  - Register account page
+├── registerComplete.tpl   -  ?  - Redirect page once you create an account?
+├── reset.tpl              -  X  - Page to reset password
+├── reset_code.tpl         -  X  - Page with reset confirmation and code
+├── search.tpl             -  X  - Search Page
+├── tag.tpl                -  X  - Topics with a certain tag
+├── tags.tpl               -  X  - Page listing all the tags
+├── top.tpl                -  X  - Top topics
+├── topic.tpl              -  X  - Individual topic page
+├── tos.tpl                -  O  - Page with terms of service?
+├── unread.tpl             -  X  - Unread topics
+└── users.tpl              -  X  - Page listing users

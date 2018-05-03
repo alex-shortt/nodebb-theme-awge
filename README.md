@@ -8,8 +8,12 @@ This is meant to be used with my a custom composer, too.
 Found Here: https://github.com/alex-shortt/nodebb-plugin-composer-awge
 
 Website:        https://awgeshit.com
+
 Author:         Alex Shortt
+
 Author Contact: @_alexshortt (Twitter)
+
 Github Repo:    https://github.com/alex-shortt/nodebb-theme-awge
+
 
 Check files.text to see which files have been changed from the default theme

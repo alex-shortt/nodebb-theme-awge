@@ -666,6 +666,74 @@ body {
     */
 }
 
+.awge-usercard {
+    border: 2px solid;
+    border-bottom-color: #535353;
+    border-right-color: #535353;
+    border-left-color: #dbdbdb;
+    border-top-color: #dbdbdb;
+    background-color: #bfbfbf;
+    font-size: 13px;
+    padding: 2px !important;
+    margin: 0 !important;
+    height: auto;
+
+    @media (max-width: @screen-xs-max) {
+        width: auto;
+    }
+
+    &-title {
+        padding: 2px 4px 3px;
+        position: relative;
+        background-color: #808080;
+
+        &>h1 {
+            margin: 0 !important;
+            color: #bcbcbc !important;
+            font-size: 13px !important;
+            font-weight: bold !important;
+            line-height: initial !important;
+        }
+    }
+    &-container {
+        display: flex;
+
+        @media (max-width: @screen-xs-max) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &>div {
+            color: black !important;
+
+            &>a {
+                color: black !important;
+            }
+        }
+    }
+    &-info {
+        @media (max-width: @screen-xs-max) {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        &>button {
+            @media (max-width: @screen-xs-max) {
+                position: relative !important;
+                right: 0 !important;
+                top: 0 !important;
+                margin-left: 10px;
+            }
+        }
+    }
+    &-statusbar {
+        background: #c0c0bf;
+    }
+}
+
 .header #user_dropdown {
     padding: 0px;
 }

@@ -35,7 +35,7 @@ templates/
 │   └── members.tpl  -  O  - List of users in a group? - not used
 ├── modules/
 │   ├── taskbar.tpl   -  O  - Space for alerts? - not used
-│   └── usercard.tpl  -  O  - Card explaining main users stats? - not used
+│   └── usercard.tpl  -  X  - ID card when you click on users
 ├── partials/
 │   ├── account/
 │   │   ├── header.tpl  -  X  - Cover picture, user icon, and settings

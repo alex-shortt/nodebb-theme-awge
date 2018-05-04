@@ -1,7 +1,7 @@
 This is to keep track of which files the theme has overwritten and/or might need to overwrite. 
 
-y: The file is overwritten with this theme
-n : The file is intentionally not overwritten
+X: The file is overwritten with this theme
+O : The file is intentionally not overwritten
 ?: Not sure what the file is
 
 templates/

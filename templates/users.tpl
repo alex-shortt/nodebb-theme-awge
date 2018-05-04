@@ -12,7 +12,7 @@
 		</div>
 		<h1 class="awge-windows-title-text">Users</h1>
 	</div>
-	
+
 	<div class="row">
 		<div class="col-lg-6">
 			<!-- IMPORT partials/users_list_menu.tpl -->
@@ -38,21 +38,22 @@
 		<!-- ENDIF function.displayUserSearch -->
 	</div>
 
-	<ul id="users-container" class="users-container awge-windows-container">
-		<!-- IMPORT partials/users_list.tpl -->
-		<!-- IF anonymousUserCount -->
-		<li class="users-box anon-user">
-			<div class="user-icon">G</div>
-			<br/>
-			<div class="user-info">
-				<span id="online_anon_count">{anonymousUserCount}</span>
-				<span>[[global:guests]]</span>
-			</div>
-		</li>
-		<!-- ENDIF anonymousUserCount -->
-	</ul>
-
-	<!-- IMPORT partials/paginator.tpl -->
+	<div class="awge-windows-container">
+		<ul id="users-container" class="users-container">
+			<!-- IMPORT partials/users_list.tpl -->
+			<!-- IF anonymousUserCount -->
+			<li class="users-box anon-user">
+				<div class="user-icon">G</div>
+				<br/>
+				<div class="user-info">
+					<span id="online_anon_count">{anonymousUserCount}</span>
+					<span>[[global:guests]]</span>
+				</div>
+			</li>
+			<!-- ENDIF anonymousUserCount -->
+		</ul>
+		<!-- IMPORT partials/paginator.tpl -->
+	</div>
 
 	<div class="awge-windows-statusbar">
 		<div class="left">

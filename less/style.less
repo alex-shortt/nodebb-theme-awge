@@ -358,7 +358,8 @@ body {
             color: #bcbcbc;
             font-size: 13px;
             font-weight: bold;
-            line-height: initial;
+            line-height: initial;    
+            padding-right: 50px;
         }
     }
     &-toolbar {
@@ -603,11 +604,21 @@ body {
             min-height: initial;
             min-width: initial;
         }
+        
+        //edit this for tag input!!!
+        &>.tag-row {
+            padding-top: 15px;
+
+            &>div>input {
+                width: 100%;
+                font-size: 1.2em;
+            }
+        }
     }
     &-textcontainer {
         height: 42vh;
         @media (max-width: @screen-xs-max) {
-            height: ~"calc(100vh - 308px)";
+            height: 100vh;
         }
     }
     &-onlymobile {

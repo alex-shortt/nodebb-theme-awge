@@ -358,7 +358,7 @@ body {
             color: #bcbcbc;
             font-size: 13px;
             font-weight: bold;
-            line-height: initial;    
+            line-height: initial;
             padding-right: 50px;
         }
     }
@@ -603,9 +603,7 @@ body {
         @media (max-width: @screen-xs-max) {
             min-height: initial;
             min-width: initial;
-        }
-        
-        //edit this for tag input!!!
+        } //edit this for tag input!!!
         &>.tag-row {
             padding-top: 15px;
 
@@ -745,6 +743,27 @@ body {
     }
 }
 
+.awge-chat {
+    display: initial !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+
+    &-container {
+        padding: 0px !important;
+    }
+
+    &-body {
+        padding: 0px !important;
+    }
+
+    &-composer {
+        &-remaining {
+            margin-bottom: 5px;
+            margin-right: 25px;
+        }
+    }
+}
+
 .header #user_dropdown {
     padding: 0px;
 }
@@ -845,4 +864,8 @@ html.composing body {
 
 .topic .posts {
     transition: background .25s linear;
+}
+
+.users-container {
+    text-align: center;
 }

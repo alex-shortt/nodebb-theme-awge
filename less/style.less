@@ -748,12 +748,22 @@ body {
     transform: none !important;
     -webkit-transform: none !important;
 
+    @media (max-width: @screen-xs-max) {
+        position: relative !important;
+        display: block !important;
+        height: initial;
+    }
+
     &-container {
         padding: 0px !important;
     }
 
     &-body {
         padding: 0px !important;
+
+        @media (max-width: @screen-xs-max) {
+            height: 70vh !important;
+        }
     }
 
     &-composer {

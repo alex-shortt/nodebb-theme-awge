@@ -1,5 +1,15 @@
 This is to keep track of which files the theme has overwritten and/or might need to overwrite. 
 
+=== LESS Files ===
+
+Non-Persona Files: [
+    awge.less - all custom awge styles
+    compiled.less - compiles all less files into one, same as persona.less
+    mobile.less - 2 lines commented out
+]
+
+=== TPL Files ===
+
 X: The file is overwritten with this theme
 O : The file is intentionally not overwritten
 ?: Not sure what the file is
@@ -105,8 +115,8 @@ templates/
 ├── alert.tpl              -  X  - Alerts that show up at the bottom right with messages like "You are now logged in"
 ├── categories.tpl         -  X  - List of categories
 ├── category.tpl           -  X  - An individual category
-├── chat.tpl               -  O  - Chat Modal
-├── chats.tpl              -  O  - Page for listing chats
+├── chat.tpl               -  X  - Chat Modal
+├── chats.tpl              -  X  - Page for listing chats (Fullscreen chat)
 ├── confirm.tpl            -  ?  - Modal for email confirmation?
 ├── footer.tpl             -  X  - Bottom of page across all pages
 ├── header.tpl             -  X  - Top of page across all pages

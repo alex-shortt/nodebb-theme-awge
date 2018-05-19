@@ -37,7 +37,31 @@
 			$(".minimize").click(function() {
 				minimizeAWGEWindow(this);
 			});
-		
+			
+			var foundHighlight = false;
+
+			function setIntervalX(callback, delay, repetitions) {
+				var x = 0;
+				var intervalID = window.setInterval(function() {
+
+					callback();
+
+					if (++x === repetitions || foundHighlight) {
+						window.clearInterval(intervalID);
+					}
+				}, delay);
+			}
+
+			setIntervalX(function() {
+				$('.awge-windows-container').each(function(ind, obj) {
+					if ($(obj).find(".highlight").length > 0) {
+						$(obj).animate({
+							scrollTop: $($(obj).find(".highlight")[0]).offset().top
+						}, 2000);
+						foundHighlight = true;
+					}
+				});
+			}, 100, 100);
 		}
 		else {
 			setTimeout(function() { AWGEdefer() }, 50);

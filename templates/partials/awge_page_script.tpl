@@ -37,6 +37,7 @@
 			$(".minimize").click(function() {
 				minimizeAWGEWindow(this);
 			});
+		
 		}
 		else {
 			setTimeout(function() { AWGEdefer() }, 50);
@@ -89,7 +90,7 @@
 	function minimizeAWGEWindow(obj) {
 		var awgeWindow = $(obj).closest(".awge-windows");
 		if (awgeWindow.hasClass("awge-windows-hidden")) return;
-		
+
 		if (awgeWindow.attr("id") == null) {
 			awgeWindow.attr("id", guidAWGE());
 		}

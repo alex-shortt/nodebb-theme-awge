@@ -594,6 +594,7 @@ body {
     @media (max-width: @screen-xs-max) {
         width: 100%;
         position: relative !important;
+        z-index: 1 !important;
     }
     @media (min-width: @screen-sm-min) {
         height: auto !important;
@@ -604,7 +605,7 @@ body {
         @media (max-width: @screen-xs-max) {
             min-height: initial;
             min-width: initial;
-        } //edit this for tag input!!!
+        }
         &>.tag-row {
             padding-top: 15px;
 
@@ -775,6 +776,22 @@ body {
             margin-bottom: 5px;
             margin-right: 25px;
         }
+    }
+}
+
+.awge-chats {
+    width: 45vw;
+
+    @media (max-width: @screen-md-max) {
+        width: 60vw;
+    }
+
+    @media (max-width: @screen-xs-max) {
+        width: 100%;
+    }
+
+    &-container {
+        display: inherit !important;
     }
 }
 

@@ -55,10 +55,11 @@
 			setIntervalX(function() {
 				$('.awge-windows-container').each(function(ind, obj) {
 					if ($(obj).find(".highlight").length > 0) {
+						console.log("stop!");
+						foundHighlight = true;
 						$(obj).animate({
 							scrollTop: $($(obj).find(".highlight")[0]).offset().top
-						}, 2000);
-						foundHighlight = true;
+						}, 50);
 					}
 				});
 			}, 100, 100);

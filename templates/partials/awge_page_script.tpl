@@ -37,7 +37,7 @@
 			$(".minimize").click(function() {
 				minimizeAWGEWindow(this);
 			});
-			
+
 			var foundHighlight = false;
 
 			function setIntervalX(callback, delay, repetitions) {
@@ -56,9 +56,13 @@
 				$('.awge-windows-container').each(function(ind, obj) {
 					if ($(obj).find(".highlight").length > 0) {
 						foundHighlight = true;
-						$(obj).animate({
-							scrollTop: $($(obj).find(".highlight")[0]).offset().top
-						}, 50);
+						var target = $($(obj).find(".highlight")[0]);
+						const dist = target.offset().top - $(obj).offset().top - 30;
+						if ($(obj).data("awge-scrolled") != "true") {
+							console.log(dist);
+							$(obj).scrollTop(dist);
+							$(obj).data("awge-scrolled", "true");
+						}
 					}
 				});
 			}, 100, 100);

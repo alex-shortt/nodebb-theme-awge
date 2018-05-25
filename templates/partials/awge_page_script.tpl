@@ -59,8 +59,7 @@
 						var target = $($(obj).find(".highlight")[0]);
 						const dist = target.offset().top - $(obj).offset().top - 30;
 						if ($(obj).data("awge-scrolled") != "true") {
-							console.log(dist);
-							$(obj).scrollTop(dist);
+							scrollTop(dist);
 							$(obj).data("awge-scrolled", "true");
 						}
 					}

@@ -1,7 +1,7 @@
 # nodebb-theme-awge
 Nodebb theme for AWGE Forums
 
-Note: Some features, such as chat, are not implemented. I did what I needed
+Note: Some features, are not implemented. I did what I needed
 to finish the AWGE Forums, I am not looking for this to be a complete theme.
 
 This is meant to be used with my a custom composer, too.
